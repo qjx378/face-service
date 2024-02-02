@@ -1,3 +1,10 @@
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">人脸识别服务</h1>
+<h4 align="center">基于Spring Boot服务架构</h4>
+<p align="center">
+	<a href="https://gitee.com/qjx378/face-service/stargazers"><img src="https://gitee.com/qjx378/face-service/badge/star.svg?theme=dark"></a>
+	<a href="https://gitee.com/qjx378/face-service"><img src="https://img.shields.io/badge/FaceService-v0.0.1-brightgreen.svg"></a>
+	<a href="https://gitee.com/qjx378/face-service/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+</p>
 # **简介**
 基于中科视拓开源人脸检测技术模型，通过利用Java技术和向量搜索技术提供包括人脸检测与分析、比对、搜索、验证、五官定位、活体检测等API接口服务功能，为开发者和企业提供高性能高可用的人脸识别服务。可应用于在线娱乐、在线身份认证等多种应用场景，充分满足各行业客户的人脸属性识别及用户身份确认等需求。
 <br><br>
