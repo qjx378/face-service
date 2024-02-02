@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://localhost:3309/izerofx_face_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+
+app:
+  milvus:
+    host: localhost
+    port: 19530
+    username: root
+    password: root
+  seetaface:
+    device: cpu
+    model-path: './models'
+    face-image-path: './face_images'

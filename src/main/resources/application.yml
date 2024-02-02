@@ -1,0 +1,26 @@
+# 服务器相关配置
+server:
+  port: 8081
+  servlet:
+    session:
+      cookie:
+        http-only: true
+  error:
+    include-message: always
+
+spring:
+  profiles:
+    #指定读取配置文件:dev(开发环境),prod(生产环境),qa(测试环境)
+    active: dev
+  threads:
+    virtual:
+      enabled: true
+  aop:
+    proxy-target-class: true
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    # Spring上传文件大小设置
+    multipart:
+      max-file-size: 128MB
+      max-request-size: 128MB
