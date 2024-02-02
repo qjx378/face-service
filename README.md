@@ -3,7 +3,8 @@
 <p align="center">
   <a href="https://gitee.com/qjx378/face-service/stargazers"><img src="https://gitee.com/qjx378/face-service/badge/star.svg?theme=dark"></a>
   <a href="https://gitee.com/qjx378/face-service"><img src="https://img.shields.io/badge/FaceService-v0.0.1-brightgreen.svg"></a>
-  <a href="https://gitee.com/qjx378/face-service/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+  <a href="https://gitee.com/qjx378/face-service/blob/master/LICENSE"><img src="https://img.shields.io/github/license/qjx378/face-service"></a>
+
 </p>
 
 # **简介**
