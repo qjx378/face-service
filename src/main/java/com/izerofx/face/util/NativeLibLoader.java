@@ -28,7 +28,7 @@ public class NativeLibLoader {
 
     private static final String SEETAFACE6 = "seetaface6";
 
-    private static final String SEETAFACE6_LIBRARY_PACKAGE = "com/seeta/sdk";
+    private static final String SEETAFACE6_LIBRARY_PACKAGE = "com/izerofx/face/sdk";
 
     private static final String WINDOWS_LIBRARY_EXTENSION = ".dll";
 
