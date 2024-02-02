@@ -9,15 +9,20 @@ SeetaFace6入门教程[https://github.com/seetafaceengine/SeetaFaceTutorial](htt
 
 # **接口范围**
 本API服务主要专注于提供包括人脸检测与分析、比对、搜索、验证、五官定位、活体检测等API接口服务，在该API服务中实现人脸检测与分析、五官定位、人脸比对、人脸库管理、人脸搜索、人脸静态活体检测，主要包括如下API对外接口：
-1）人脸检测与分析：
+
+1）人脸检测与分析<br>
 对请求图片检测返回人脸的位置、面部属性；对请求图片进行五官定位，计算构成人脸轮廓的68个点
-2）人脸比对：
+
+2）人脸比对<br>
 对两张图片中的人脸进行相似度比对，返回人脸相似度分数。
-3）人脸库管理：
+
+3）人脸库管理<br>
 包括增、删人脸库，人脸库增、删人脸。
-3）人脸搜索
+
+3）人脸搜索<br>
 给定一张待识别的人脸图片，在一个或多个人脸库中识别出最相似的前 N 个人脸。
-4）人脸静态活体检测
+
+4）人脸静态活体检测<br>
 对用户上传的静态图片进行防翻拍活体检测，以判断是否是翻拍图片。
 
 # **系统需求**
@@ -27,14 +32,31 @@ MySQL >= 8.0 <br>
 Milvus >= 2.3
 
 # **技术选型**
-1、系统环境 <br>
+1. 系统环境 <br>
 Java EE 21 <br>
 Servlet 6.0 <br>
 Apache Maven 3
 
-2、主框架 <br>
+2. 主框架 <br>
 Spring Boot 3.2.x <br>
 Spring Framework 6.0.x <br>
 
-3、持久层 <br>
+3. 持久层 <br>
 Spring JDBC
+
+# **部署方式**
+1. 下载模型文件，解压后放入某个文件夹下，在启动服务前，修改spring配置文件中的app.seetaface.model-path属性，指向模型文件夹的路径。
+2. 修改spring配置文件中的face-image-path，用于存放人脸图片的文件夹。
+
+# **演示图**
+注：该工程不包含示例页面，以下示例页面UI、素材取自网络，仅用于演示使用。
+<table>
+    <tr>
+        <td><img src="https://res.file.izerofx.com/face-service/1.png"/></td>
+        <td><img src="https://res.file.izerofx.com/face-service/2.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://res.file.izerofx.com/face-service/3.png"/></td>
+        <td><img src="https://res.file.izerofx.com/face-service/4.png"/></td>
+    </tr>
+</table>
