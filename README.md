@@ -7,16 +7,17 @@
 
 </p>
 
-# **简介**
+## **简介**
 基于开源人脸检测AI模型，通过利用Java技术和向量搜索技术提供包括人脸检测与分析、比对、搜索、验证、五官定位、活体检测等API接口服务功能，为开发者和企业提供高性能高可用的人脸识别服务。可应用于在线娱乐、在线身份认证等多种应用场景，充分满足各行业客户的人脸属性识别及用户身份确认等需求。
 <br><br>
 关于中科视拓开源人脸模型（SeetaFace6），您可以访问[https://github.com/SeetaFace6Open/index](https://github.com/SeetaFace6Open/index)了解更多。
 <br>
 SeetaFace6入门教程[https://github.com/seetafaceengine/SeetaFaceTutorial](https://github.com/seetafaceengine/SeetaFaceTutorial)了解更多。
-# **技术架构**
+
+## **技术架构**
 基于Spring Boot+MySQL+Milvus的技术组合，接口采用RESTful API定义，通过JNI（Java Native Interface）技术调用底层的人脸识别模型，实现人脸的检测与识别。
 
-# **接口范围**
+## **接口范围**
 本API服务主要专注于提供包括人脸检测与分析、比对、搜索、验证、五官定位、活体检测等API接口服务，在该API服务中实现人脸检测与分析、五官定位、人脸比对、人脸库管理、人脸搜索、人脸静态活体检测，主要包括如下API对外接口：
 
 1）人脸检测与分析<br>
@@ -41,23 +42,27 @@ MySQL >= 8.0 <br>
 Milvus >= 2.3
 
 # **技术选型**
-1. 系统环境 <br>
+- 系统环境 <br>
 Java EE 21 <br>
 Servlet 6.0 <br>
 Apache Maven 3
 
-2. 主框架 <br>
+- 主框架 <br>
 Spring Boot 3.2.x <br>
 Spring Framework 6.0.x <br>
 
-3. 持久层 <br>
+- 持久层 <br>
 Spring JDBC
 
-# **部署方式**
-1. 下载模型文件，解压后放入某个文件夹下，在启动服务前，修改spring配置文件中的app.seetaface.model-path属性，指向模型文件夹的路径。
+## **部署方式**
+1. 下载模型文件（百度网盘：https://pan.baidu.com/share/init?surl=LlXe2-YsUxQMe-MLzhQ2Aw 提取码：ngne），将下载的所有*.csta模型文件放入某个路径下，在启动服务前，修改spring配置文件中的app.seetaface.model-path属性，指向存放模型文件夹的路径。
 2. 修改spring配置文件中的face-image-path，用于存放人脸图片的文件夹。
 
-# **演示图**
+## 在线体验
+演示地址：[https://face.izerofx.com](https://face.izerofx.com/)
+- 服务器配置较低，对体验有一定的影响。
+
+## **演示图**
 注：该工程不包含示例页面，以下示例页面UI、素材取自网络，仅用于演示使用。
 <table>
     <tr>
